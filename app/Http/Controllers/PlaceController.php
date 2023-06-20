@@ -53,6 +53,8 @@ class PlaceController extends Controller
 
         $place->save();
 
+        
+
         $place->update($request->all());
 
         return redirect()->route('places.index')->with('success','Place updated successfully');
